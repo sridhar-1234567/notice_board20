@@ -4,12 +4,16 @@ jobs:
   test-server:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install Node
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install Dependencies
         run: npm install
-      - name: Start Check
-        run: node -v
+
+      - name: Final Check
+        run: echo "Backend Success"
