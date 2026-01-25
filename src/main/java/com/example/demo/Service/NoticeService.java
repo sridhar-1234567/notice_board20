@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class NoticeService {
+
     @Autowired
     private NoticeRepository repo;
 
@@ -20,9 +21,16 @@ public class NoticeService {
         return repo.save(notice);
     }
 
+    public Notice update(Long id, Notice newNotice) {
+        return repo.findById(id).map(existing -> {
+            existing.setTitle(newNotice.getTitle());
+            existing.setCategory(newNotice.getCategory());
+            existing.setDescription(newNotice.getDescription());
+            return repo.save(existing);
+        }).orElseThrow(() -> new RuntimeException("Notice not found with id " + id));
+    }
+
     public void delete(Long id) {
         repo.deleteById(id);
     }
 }
-
-

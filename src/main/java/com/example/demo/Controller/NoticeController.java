@@ -9,19 +9,29 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notices")
-@CrossOrigin(origins = "http://localhost:3000") // allow React frontend
+@CrossOrigin(origins = "http://localhost:3000")
 public class NoticeController {
-    @Autowired
 
+    @Autowired
     private NoticeService service;
 
     @GetMapping
-    public List<Notice> getAll() { return service.getAll(); }
+    public List<Notice> getAll() {
+        return service.getAll();
+    }
 
     @PostMapping
-    public Notice create(@RequestBody Notice notice) { return service.save(notice); }
+    public Notice create(@RequestBody Notice notice) {
+        return service.save(notice);
+    }
+
+    @PutMapping("/{id}")
+    public Notice update(@PathVariable Long id, @RequestBody Notice notice) {
+        return service.update(id, notice);
+    }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id) { service.delete(id); }
+    public void delete(@PathVariable Long id) {
+        service.delete(id);
+    }
 }
-
