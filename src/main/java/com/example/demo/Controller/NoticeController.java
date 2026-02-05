@@ -9,7 +9,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notices")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://notice-board-sand.vercel.app"
+})
+
 public class NoticeController {
 
     @Autowired
