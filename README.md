@@ -10,6 +10,7 @@ When opening the frontend, backend may take 30–60 seconds to wake up
 Please open the backend URL once before using the frontend
 📊 Project Presentation
 👉 Download Project PPT
+https://github.com/3BCADevops20/notice_board20/blob/main/Notice_Board_System.pptx
 🛠️ Tech Stack
 Java
 Spring Boot
