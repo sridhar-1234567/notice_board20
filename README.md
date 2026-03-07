@@ -5,7 +5,12 @@ This is the Spring Boot backend for the Notice Board System.
 It handles notice storage, updates, and data management for the application.
 
 🚀 Live Backend URL (Render – Free Plan)
-👉 https://notice-board20.onrender.com/api/notices ( wait for few seconds run and wait until it returns [] then check with frontend link )
+
+
+👉 https://notice-board20.onrender.com/api/notices
+
+
+( wait for few seconds run and wait until it returns [] then check with frontend link )
 
 ⚠️ Important Note (Render Free Plan):
 
