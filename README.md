@@ -5,7 +5,7 @@ This is the Spring Boot backend for the Notice Board System.
 It handles notice storage, updates, and data management for the application.
 
 🚀 Live Backend URL (Render – Free Plan)
-👉 https://notice-board20.onrender.com/api/notices� ( wait for few seconds run and wait until it returns [] then check with frontend link )
+👉 https://notice-board20.onrender.com/api/notices ( wait for few seconds run and wait until it returns [] then check with frontend link )
 
 ⚠️ Important Note (Render Free Plan):
 
@@ -27,7 +27,7 @@ Docker
 SonarCloud
 Render (Deployment)
 ▶️ Run Locally
-git clone https://github.com/3BCADevops20/notice_board20.git�
+git clone https://github.com/3BCADevops20/notice_board20.git
 cd notice_board20
 mvn spring-boot:run
 Backend runs at:
@@ -38,6 +38,6 @@ Quality Gate passed successfully ✅
 🌐 Frontend
 Frontend is built using React and deployed on Vercel.
 👉 Frontend Repository:
-https://github.com/3BCADevops20/notice_board.git�
+https://github.com/3BCADevops20/notice_board.git
 👉 Live Frontend URL:
-notice-board-sand.vercel.app�
+notice-board-sand.vercel.app
